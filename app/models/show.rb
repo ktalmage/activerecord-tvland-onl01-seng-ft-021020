@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   
   def actors_list
   
-  characters.each do |character|
+  characters.map do |character|
     character.actor
   end
    binding.pry
