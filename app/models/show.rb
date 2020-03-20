@@ -8,6 +8,5 @@ class Show < ActiveRecord::Base
   characters.map do |character|
     character.actor.first_name + " "+ character.actor.last_name
   end
-   binding.pry
-  end
+end
 end
